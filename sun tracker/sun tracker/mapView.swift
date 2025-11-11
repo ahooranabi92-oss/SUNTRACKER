@@ -42,7 +42,7 @@ struct mapView: View {
                                             }
                                         }
                     Spacer()
-                    VStack(alignment: .trailing, spacing: 10) {
+                    VStack(alignment: .trailing, spacing: 15) {
                                             Button {} label: {
                                                 Image(systemName: "ellipsis")
                                                     .padding(15)
