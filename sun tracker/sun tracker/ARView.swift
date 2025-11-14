@@ -1,35 +1,20 @@
+
+//
+//  ARView.swift
+//  sun tracker
+//
+//  Created by ahoora nabi on 12/11/25.
+//
+
 import SwiftUI
-import RealityKit
-import ARKit
 
-struct ARViewContainer: UIViewRepresentable {
-
-    func makeUIView(context: Context) -> ARView {
-        let arView = ARView(frame: .zero)
-
-        
-        let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal, .vertical]
-        config.environmentTexturing = .automatic
-
-        
-        arView.session.run(config)
-
-        return arView
-    }
-
-    func updateUIView(_ uiView: ARView, context: Context) {
-        
-    }
-}
-
-struct ARViewScreen: View {
+struct ARView: View {
     var body: some View {
-        ARViewContainer()
-            .ignoresSafeArea()
+        Text("Hello, MY AR View!")
     }
 }
 
 #Preview {
-    ARViewScreen()
+    ARView()
 }
+
