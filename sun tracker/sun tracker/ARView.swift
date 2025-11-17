@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ARView: View {
     var body: some View {
-        Text("Hello, MY AR View!")
+        Text("Hello, MY AR View!            I hope see you at last challenge")
+            .font(Font.largeTitle)
+            .foregroundColor(.red)
+            .padding()
+        
     }
 }
 
